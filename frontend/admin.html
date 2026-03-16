@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Admin Panel</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+      </nav>
+    </header>
+
+    <section class="admin">
+      <h2>Add Category</h2>
+
+      <input id="catName" placeholder="Category name" />
+
+      <input id="catDesc" placeholder="Description" />
+
+      <button onclick="createCategory()">Create Category</button>
+
+      <hr />
+
+      <h2>Add Product</h2>
+
+      <input id="name" placeholder="Product name" />
+
+      <input id="desc" placeholder="Description" />
+
+      <input id="price" placeholder="Price" />
+
+      <input id="image" placeholder="Image URL" />
+
+      <select id="categorySelect"></select>
+
+      <button onclick="createProduct()">Create Product</button>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
